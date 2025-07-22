@@ -1,1 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marcellus&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-Cormorant: "Cormorant+Garamond", sans-serif;
+    --font-Marcellus: "Marcellus", serif;
+}
