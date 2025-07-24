@@ -5,16 +5,3 @@
     --font-Cormorant: "Cormorant+Garamond", sans-serif;
     --font-Marcellus: "Marcellus", serif;
 }
-
-@layer utilities {
-    .mask-ink-bottom {
-        mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0V27.35c47.29,22,98.07,36.49,150,40.39,56.39,4.32,113.69-5.24,168-22.62C417.77,26.86,474,5.52,531.77,4.39c52.87-1,104.22,17.65,157.61,27.17,58.53,10.38,117.89,8.38,176.23-4.52C953,14.78,1008.46,2.49,1062.14,1.33c56.35-1.22,112.56,10.25,137.86,16.2V0Z' fill='black'/%3E%3C/svg%3E");
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        mask-position: bottom;
-        -webkit-mask-image: inherit;
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: cover;
-        -webkit-mask-position: bottom;
-    }
-}
