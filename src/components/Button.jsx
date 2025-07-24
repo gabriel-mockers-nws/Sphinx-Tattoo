@@ -1,34 +1,34 @@
-import proptypes from 'prop-types'; 
+import PropTypes from 'prop-types'; 
 import { Link } from 'react-router-dom';
 
 export default function Button({ 
     href, 
     children, 
     className = '', 
-    isexternal = false, 
+    isExternal = false, 
     ...props}) {
-    const basestyle = `bg-[#426778] hover:bg-[#bd893a] text-white, font-bold rounded-lg px-4 py-4 text-center transition-colors duration-300 ease-in-out ${className}`;
+    const basestyle = `bg-[#426778] hover:bg-[#bd893a] text-white hover:text-black font-bold rounded-lg px-8 py-8 text-center transition-colors duration-300 ease-in-out ${className}`;
 
     if(href) {
-        if(isexternal) {
+        if(isExternal) {
             return (
-                <button
+                <a
                 href={href}
+                target='_blank'
+                rel='noopener noreferrer'
                 className={basestyle}
                 {...props}>
                     {children}
-                </button>
+                </a>
             );
         } else {
             return (
-                <button>
                     <Link 
                     to={href}
                     className={basestyle}
                     {...props}>
                         {children}
                     </Link>
-                </button>
             );
         };
     };
@@ -42,8 +42,8 @@ export default function Button({
 };
 
 Button.propTypes = {
-    href: proptypes.string,
-    children: proptypes.node.isRequired,
-    className: proptypes.string,
-    isexternal: proptypes.bool,
+    href: PropTypes.string,
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    isExternal: PropTypes.bool,
 };
