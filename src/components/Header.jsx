@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
 return (
     <>
-        <nav className="pt-4 flex items-center justify-between mb-8 border-b-2 border-gray-300 shadow-lg">
+        <nav className="pt-4 flex items-center justify-between border-b-2 border-gray-300 shadow-lg">
             <div className="ml-4 mb-2 flex ">
                 <img src="./img/logo.png" alt="logo" className="max-h-25 mx-3 my-2 "/>
                 <h1 className="text-5xl font-bold mx-3 my-7 font-Marcellus">Sphinx Tattoo</h1>
