@@ -15,6 +15,9 @@ function App() {
     <>
     <div>
       <Router>
+        <div className="bg-yellow-300 text-black text-center py-2 px-4 font-bold">
+          ERÖFFNUNG AM 13.09.2025
+        </div>
         <Header/>
         <Routes>
           <Route path='/' element={<Home />}/>
